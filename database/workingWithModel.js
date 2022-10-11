@@ -7,7 +7,7 @@ export default async function workingWithModel(){
 
       const personParis = await person.create({ 
         name: "Paris", 
-        age: "12",
+        age: "19",
         email: "com@gmail.com",
 
       });

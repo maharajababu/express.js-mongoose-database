@@ -3,7 +3,9 @@ dotenv.config();
 
 const ATLAS_URI = process.env.ATLAS_URI;
 import mongoose from 'mongoose';
+
 import workingWithModel from './workingWithModel.js';
+import queryMyDatabase  from './query.js';
 
 export default function connectToMongoose() {
 
@@ -16,6 +18,7 @@ export default function connectToMongoose() {
     {
       console.log("Congrats! You are successfully connected to MongoDB");
       workingWithModel(); 
+      queryMyDatabase('63453beb7d334106903a2d83');
     }
   });
 }
