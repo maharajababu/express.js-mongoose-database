@@ -1,0 +1,19 @@
+1. show databases -> list all available databases
+2. db -> current databases you are in
+3. use database_name -> you are in this database_name
+4. show collections -> list collections of database you are using
+5. db.dropDatabase() -> drops database
+6. db.createCollection(‘collectionName’) -> creates collection
+7. db.collectionName.drop() -> drops the collection
+8. db.collectionName.insert({}) -> inserting collection 
+9. db.collectionName.insertMany([{}, {}, {}]) -> inserting multiple rows
+10. db.collectionName.find() -> lists all rows
+11. db.collectionName.find().pretty() -> lists all rows nicely
+12. db.collectionName.find({key: ‘value’}).pretty() -> lists rows with specific key-value pair nicely
+13. db.collectionName.find().pretty().limit(number) -> lists limited(number specified) rows nicely
+14. db.collectionName.find({}).count() -> counts number of rows in collection
+15. db.collectionName.find().sort({___:1}) -> sorts in ascending(1) or descending order(-1)
+16. db.collectionName.findOne({__:__}) -> finds the first row item matching the object
+17. db.collectionName.update({filter}, {change}) -> updating the row
+18. db.collectionName.update({filter}, {change}, {upsert: true}) -> updating-add the row if not present
+19. 
